@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Feedback do app</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="../css/default.css" rel="stylesheet" type="text/css" />
+<link href="../css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<div id="header">
+	<h1>Bom Preço</h1>
+	<h2></h2>
+</div>
+<!-- end #header -->
+<div id="menu-wrapper">
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="firebase.html">Home</a></li>
+				<li> <div class="dropdown">
+    <button class="dropbtn">Lista de produtos 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="arroz.html">Arroz
+      <a href="refrigerante.html">Bebidas
+	  <a href="biscoito.html">Biscoito
+      <a href="carne.html">Carne
+	  <a href="feijao.html">Feijão
+      <a href="macarrao.html">Macarrão
+      <a href="sacolao.html" >Sacolão</a>
+    </div>
+  </div> </li>
+				<li><div class="dropdown">
+    <button class="dropbtn">Lista de usuarios 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="email.html">Email
+      <a href="google.html">Google Account
+      <a href="facebook.html">Facebook</a>
+    </div>
+  </div></li>
+
+				<li><div class="dropdown">
+    <button class="dropbtn">Relatório 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="totalProdutos.html">Produtos
+      <a href="usuario.html">Usuarios
+      <a href="lugares.html" >Supermercados</a>
+    </div>
+  </div></li>
+                <li><a href="controle.html" >Controle de produtos</a></li>
+				<li><a href="feedback.html" >Feedback do app</a></li>
+				<li><a href="mensa.html" >Pedido de Manutenção</a></li>
+			
+		</div>
+</div>
+<!-- end #menu -->
+<div id="content">
+	<div id="posts">
+		<div class="post">
+			<center><h1 class="title" style="font-size:300%">Feedback do aplicativo</h1><center>
+			<div class="story">
+			
+		<br><br><br><table id="customers">
+  <tr>
+    <th>Codigo</th>
+    <th>Mensagem</th>
+	<th>Email</th>
+  </tr>
+  <tr >
+   <td id="add" ></td>
+   <td id="add1"></td>
+   <td id="add2" ></td>
+  </tr>
+</table><br><br>
+			
+ <div style="border-bottom: 4px solid #EA5A4B;"></div>
+
+				<br><br><section class="newsletter">
+  <p style="font-size:120%; color:black; text-align: center;"><strong>Excluir mensagem</strong></p>
+  <input  type="text" placeholder="Digite o codigo.." id="excluir" />
+  <button id "excluir" onclick="exclui()">Excluir</button>
+</section>	
+
+			</div>		
+		</div>
+		<div class="post">
+			<div class="story">
+			
+				</ol>
+			</div>
+		</div>
+	</div>
+	<!-- end #posts -->
+	
+	<!-- end #links -->
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end #content -->
+<div id="footer">
+	<p id="legal">@ Bom Preço - Todos os direitos reservados</p>
+</div>
+<!-- end #footer -->
+
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAqoidosqTJn1OJYlh4-4EaqKKPeCYwCag",
+    authDomain: "supermercado-c1be1.firebaseapp.com",
+    databaseURL: "https://supermercado-c1be1.firebaseio.com",
+    projectId: "supermercado-c1be1",
+    storageBucket: "supermercado-c1be1.appspot.com",
+    messagingSenderId: "947657064546"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="../js/feedback.js"></script>
+</body>
+</html>

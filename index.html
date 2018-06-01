@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>User Login</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="header">
+	<h1>Bom Preço</h1>
+	<h2></h2>
+</div>
+<!-- end #header -->
+<div id="menu">
+
+</div>
+<br><br><br>
+<!-- end #menu -->
+<div id="content">
+	<div id="posts">
+		<div class="post">
+			<div class="story">
+				
+			</div>
+		</div>
+		<div class="post">
+			<div class="story">
+				<div class="container"  ">
+	
+	<center><img src="images/avatar.png" style="width: 15%; "  alt="Avatar" class="avatar"><br><br> </center>
+	<center><h2 style="color: black;" >User Login</h2></center>
+    <label for="uname"  style="margin-left: 178px;color: black; font-size:130%;"><b>Email</b></label><br>
+     <center> <input type="text" placeholder="Enter Email" name="uname" style="width: 50%; border: 1px solid black;" id="email_field" ><br></center>
+
+    <label for="psw" style="margin-left: 178px;color: black;font-size:130%;"><b>Senha</b></label>
+     <center> <input type="password" placeholder="Enter Senha" name="psw" style="width: 50%; border: 1px solid black;" id="password_field"></center>
+        
+          <center> <button type="submit"  style="width: 50%; border: 1px solid black; font-size:130%;" onclick="proximaPagina()" ><strong>Login</strong></button><br><br></center>
+     
+    </div>
+			</div>
+		</div>
+	</div>
+	<!-- end #posts -->
+	
+	<!-- end #links -->
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end #content -->
+<div id="footer">
+	<p id="legal">@ Bom Preço - Todos os direitos reservados</p>
+</div>
+<!-- end #footer -->
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAqoidosqTJn1OJYlh4-4EaqKKPeCYwCag",
+    authDomain: "supermercado-c1be1.firebaseapp.com",
+    databaseURL: "https://supermercado-c1be1.firebaseio.com",
+    projectId: "supermercado-c1be1",
+    storageBucket: "supermercado-c1be1.appspot.com",
+    messagingSenderId: "947657064546"
+  };
+  firebase.initializeApp(config);
+</script>
+  
+<script src="js/index.js"></script>
+</body>
+</html>
